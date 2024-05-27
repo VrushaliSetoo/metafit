@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_input_texts",
+  "info": {
+    "displayName": "Input text",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "inputText": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_home_heroes",
+  "info": {
+    "displayName": "Home hero",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "heroFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.input-text"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

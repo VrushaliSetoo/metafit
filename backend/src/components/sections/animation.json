@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_animations",
+  "info": {
+    "displayName": "Animation",
+    "icon": "magic",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "animationName": {
+      "type": "enumeration",
+      "enum": [
+        "Development process",
+        "Q-Boson builds trust",
+        "Qualitia customers",
+        "Product ecosystem",
+        "Integrated testing",
+        "CI CD"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

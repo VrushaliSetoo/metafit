@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_q_boson_delivers",
+  "info": {
+    "displayName": "Q Boson deliver",
+    "icon": "gift",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "firstBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.deliver-block"
+    },
+    "secondBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.deliver-block"
+    },
+    "thirdBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.deliver-block"
+    }
+  }
+}
