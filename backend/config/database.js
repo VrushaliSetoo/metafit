@@ -48,7 +48,7 @@ module.exports = ({ env }) => ({
       database: env('DATABASE_NAME', 'metafirdemo'),
       user: env('DATABASE_USERNAME', 'metafirdemo_user'),
       password: env('DATABASE_PASSWORD', 'h1GtlR4ALHWGpb2le3puhanHo3PDOVG2'),
-      // schema: env('DATABASE_SCHEMA', 'public'), // Not required
+      schema: env('DATABASE_SCHEMA', 'public'), // Not required
       ssl: env.bool('DATABASE_SSL_SELF', true),
     },
     debug: false,
