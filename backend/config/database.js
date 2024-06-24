@@ -53,7 +53,7 @@ module.exports = ({ env }) => ({
     },
     acquireConnectionTimeout: 1000000,
     pool: {
-      min: 2,
+      min: 0,
       max: 10,
       acquireTimeoutMillis: 300000,
       createTimeoutMillis: 300000,
