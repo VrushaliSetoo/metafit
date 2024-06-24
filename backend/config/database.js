@@ -60,7 +60,8 @@ module.exports = ({ env }) => ({
       destroyTimeoutMillis: 300000,
       idleTimeoutMillis: 30000,
       reapIntervalMillis: 1000,
-      createRetryIntervalMillis: 2000
+      createRetryIntervalMillis: 2000,
+      propagateCreateError: false
     },
     debug: false,
   },
