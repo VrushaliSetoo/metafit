@@ -17,52 +17,17 @@ const path = require('path');
 //   },
 // });
 
-module.exports = ({ env }) => ({
-  defaultConnection: "default",
-  connection: {
-    client: 'postgres',
-    connection: {
-      host: env('DATABASE_HOST', 'localhost'),
-      port: env.int('DATABASE_PORT', 5432),
-      database: env('DATABASE_NAME', 'metafit'),
-      user: env('DATABASE_USERNAME', 'postgres'),
-      password: env('DATABASE_PASSWORD', 'root'),
-      schema: env('DATABASE_SCHEMA', 'public'), // Not required
-    },
-    acquireConnectionTimeout: 1000000,
-    pool: {
-      min: 0,
-      max: 10,
-      acquireTimeoutMillis: 300000,
-      createTimeoutMillis: 300000,
-      destroyTimeoutMillis: 300000,
-      idleTimeoutMillis: 30000,
-      reapIntervalMillis: 1000,
-      createRetryIntervalMillis: 2000,
-      propagateCreateError: false
-    },
-    debug: false,
-  },
-});
-
-
-
-/*
-...
-LIVE RENDER
-...
-*/
 // module.exports = ({ env }) => ({
+//   defaultConnection: "default",
 //   connection: {
 //     client: 'postgres',
 //     connection: {
-//       host: env('DATABASE_HOST', 'dpg-cplbgqmd3nmc73ctiq50-a.oregon-postgres.render.com'),
+//       host: env('DATABASE_HOST', 'localhost'),
 //       port: env.int('DATABASE_PORT', 5432),
-//       database: env('DATABASE_NAME', 'metafirdemo'),
-//       user: env('DATABASE_USERNAME', 'metafirdemo_user'),
-//       password: env('DATABASE_PASSWORD', 'h1GtlR4ALHWGpb2le3puhanHo3PDOVG2'),
+//       database: env('DATABASE_NAME', 'metafit'),
+//       user: env('DATABASE_USERNAME', 'postgres'),
+//       password: env('DATABASE_PASSWORD', 'root'),
 //       schema: env('DATABASE_SCHEMA', 'public'), // Not required
-//       ssl: env.bool('DATABASE_SSL_SELF', true),
 //     },
 //     acquireConnectionTimeout: 1000000,
 //     pool: {
@@ -79,6 +44,41 @@ LIVE RENDER
 //     debug: false,
 //   },
 // });
+
+
+
+/*
+...
+LIVE RENDER
+...
+*/
+module.exports = ({ env }) => ({
+  connection: {
+    client: 'postgres',
+    connection: {
+      host: env('DATABASE_HOST', 'dpg-cplbgqmd3nmc73ctiq50-a.oregon-postgres.render.com'),
+      port: env.int('DATABASE_PORT', 5432),
+      database: env('DATABASE_NAME', 'metafirdemo'),
+      user: env('DATABASE_USERNAME', 'metafirdemo_user'),
+      password: env('DATABASE_PASSWORD', 'h1GtlR4ALHWGpb2le3puhanHo3PDOVG2'),
+      schema: env('DATABASE_SCHEMA', 'public'), // Not required
+      ssl: env.bool('DATABASE_SSL_SELF', true),
+    },
+    acquireConnectionTimeout: 1000000,
+    pool: {
+      min: 0,
+      max: 10,
+      acquireTimeoutMillis: 300000,
+      createTimeoutMillis: 300000,
+      destroyTimeoutMillis: 300000,
+      idleTimeoutMillis: 30000,
+      reapIntervalMillis: 1000,
+      createRetryIntervalMillis: 2000,
+      propagateCreateError: false
+    },
+    debug: false,
+  },
+});
 
 
 
